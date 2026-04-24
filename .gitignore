@@ -1,0 +1,48 @@
+# Composer
+/vendor/
+
+# Local config / env
+.env
+.env.local
+
+# Smarty compiled templates and cache
+/var/cache/*
+/var/compile/*
+!/var/cache/.gitkeep
+!/var/compile/.gitkeep
+
+# Logs
+*.log
+/logs/
+/var/log/
+
+# IDE / editors
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+/tmp/
+/temp/
+/.cache/
+
+# Local database dumps
+*.sql.gz
+*.dump
+*.backup
+*.bak
+
+# Docker local override
+docker-compose.override.yml
+
+# Node / SCSS tools if we add SCSS later
+/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
